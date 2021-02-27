@@ -146,25 +146,25 @@ public class studentClass {
     }
 
     public void calculateGrade(){
-        if(percentage>=94){
+        if(this.percentage>=94){
             setGrade("A+");
-        }else if(percentage>=87 && percentage<=93){
+        }else if(this.percentage>=87 && this.percentage<=93){
             setGrade("A");
-        }else if(percentage>=80 && percentage<=86){
+        }else if(this.percentage>=80 && this.percentage<=86){
             setGrade("A-");
-        }else if(percentage>=77 && percentage<=79){
+        }else if(this.percentage>=77 && this.percentage<=79){
             setGrade("B+");
-        }else if(percentage>=73 && percentage<=76){
+        }else if(this.percentage>=73 && this.percentage<=76){
             setGrade("B");
-        }else if(percentage>=70 && percentage<=72){
+        }else if(this.percentage>=70 && this.percentage<=72){
             setGrade("B-");
-        }else if(percentage>=67 && percentage<=69){
+        }else if(this.percentage>=67 && this.percentage<=69){
             setGrade("C+");
-        }else if(percentage>=63 && percentage<=66){
+        }else if(this.percentage>=63 && this.percentage<=66){
             setGrade("C");
-        }else if(percentage>=60 && percentage<=62){
+        }else if(this.percentage>=60 && this.percentage<=62){
             setGrade("C-");
-        }else if(percentage>=50 && percentage<=59){
+        }else if(this.percentage>=50 && this.percentage<=59){
             setGrade("D");
         }else{
             setGrade("F");

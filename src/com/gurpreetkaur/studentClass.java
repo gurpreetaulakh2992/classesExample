@@ -136,10 +136,11 @@ public class studentClass {
 
     public void calculatePercentage(){
         float percentage = 0.0f;
+        float total = 0.0F;
         for(int i=0; i<marks.length; i++){
-            percentage = (marks[i]/totalMarks)*100;
+            total += marks[i];
         }
-
+        percentage = total/marks.length;
         setPercentage(percentage);
     }
 

@@ -134,5 +134,39 @@ public class studentClass {
         this.grade = grade;
     }
 
+    public void calculatePercentage(){
+        float percentage = 0.0f;
+        for(int i=0; i<marks.length; i++){
+            percentage = (marks[i]/totalMarks)*100;
+        }
+
+        setPercentage(percentage);
+    }
+
+    public void calculateGrade(){
+        if(percentage>=94){
+            setGrade("A+");
+        }else if(percentage>=87 && percentage<=93){
+            setGrade("A");
+        }else if(percentage>=80 && percentage<=86){
+            setGrade("A-");
+        }else if(percentage>=77 && percentage<=79){
+            setGrade("B+");
+        }else if(percentage>=73 && percentage<=76){
+            setGrade("B");
+        }else if(percentage>=70 && percentage<=72){
+            setGrade("B-");
+        }else if(percentage>=67 && percentage<=69){
+            setGrade("C+");
+        }else if(percentage>=63 && percentage<=66){
+            setGrade("C");
+        }else if(percentage>=60 && percentage<=62){
+            setGrade("C-");
+        }else if(percentage>=50 && percentage<=59){
+            setGrade("D");
+        }else{
+            setGrade("F");
+        }
+    }
 
 }

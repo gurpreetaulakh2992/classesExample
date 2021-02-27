@@ -134,14 +134,15 @@ public class studentClass {
         this.grade = grade;
     }
 
-    public void calculatePercentage(){
-        float percentage = 0.0f;
+    public void totalMarks(){
         float total = 0.0F;
         for(int i=0; i<marks.length; i++){
             total += marks[i];
         }
-        percentage = total/marks.length;
-        setPercentage(percentage);
+        setTotalMarks(total);
+    }
+    public void calculatePercentage(){
+        this.percentage = this.totalMarks/marks.length;
     }
 
     public void calculateGrade(){
